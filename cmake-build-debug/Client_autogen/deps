@@ -50,6 +50,7 @@ Client_autogen/timestamp: \
 	/Users/prog-yammer/ITMO/thread/Client/common/websocket_worker.h \
 	/Users/prog-yammer/ITMO/thread/Client/main.cpp \
 	/Users/prog-yammer/ITMO/thread/Client/model/player.h \
+	/Users/prog-yammer/ITMO/thread/Client/resource.qrc \
 	/Users/prog-yammer/ITMO/thread/Client/ui/auth/login_page.cpp \
 	/Users/prog-yammer/ITMO/thread/Client/ui/auth/login_page.h \
 	/Users/prog-yammer/ITMO/thread/Client/ui/game/game_item_widget.h \

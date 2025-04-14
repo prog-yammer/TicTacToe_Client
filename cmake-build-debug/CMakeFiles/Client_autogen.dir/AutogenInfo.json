@@ -466,7 +466,8 @@
 		"/opt/homebrew/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsAdditionalTargetInfo.cmake",
 		"/opt/homebrew/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsVersionlessTargets.cmake",
 		"/opt/homebrew/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake",
-		"/Users/prog-yammer/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeParseArguments.cmake"
+		"/Users/prog-yammer/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeParseArguments.cmake",
+		"/Users/prog-yammer/ITMO/thread/Client/resource.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "/Users/prog-yammer/ITMO/thread/Client",
 	"CROSS_CONFIG" : false,
@@ -600,7 +601,10 @@
 	],
 	"MOC_PREDEFS_FILE" : "/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/Client_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
-	"MOC_SKIP" : [],
+	"MOC_SKIP" : 
+	[
+		"/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/qrc_resource.cpp"
+	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 12,
 	"PARSE_CACHE_FILE" : "/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/Client_autogen.dir/ParseCache.txt",
@@ -635,7 +639,10 @@
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
-	"UIC_SKIP" : [],
+	"UIC_SKIP" : 
+	[
+		"/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/qrc_resource.cpp"
+	],
 	"UIC_UI_FILES" : [],
 	"USE_BETTER_GRAPH" : true,
 	"VERBOSITY" : 0

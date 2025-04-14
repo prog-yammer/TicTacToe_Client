@@ -1953,6 +1953,9 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/Users/prog-yammer/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeParseArguments.cmake"
+		},
+		{
+			"path" : "resource.qrc"
 		}
 	],
 	"kind" : "cmakeFiles",
