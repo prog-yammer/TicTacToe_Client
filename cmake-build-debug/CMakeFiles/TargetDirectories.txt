@@ -1,0 +1,5 @@
+/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/Client.dir
+/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/Client_autogen_timestamp_deps.dir
+/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/Client_autogen.dir
