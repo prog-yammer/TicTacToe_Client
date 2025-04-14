@@ -9,20 +9,43 @@ GamePage::GamePage(QString&& gameId, std::optional<QString>&& opponentNickname, 
     auto layout = new QVBoxLayout;
     this->setLayout(layout);
 
+    auto topLayout = new QHBoxLayout;
+    layout->addLayout(topLayout);
+
     auto gameIdLabel = new QLabel(this);
     gameIdLabel->setText(QPushButton::tr("Game id: %1").arg(gameId));
-    layout->addWidget(gameIdLabel);
+    gameIdLabel->setStyleSheet("QLabel {"
+                               "font-size: 20px;"
+                               "font-weight: bold;"
+                               "}");
+    topLayout->addWidget(gameIdLabel);
 
     auto leaveButton = new QPushButton(this);
     leaveButton->setText(QPushButton::tr("Leave game"));
+    leaveButton->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+    leaveButton->setStyleSheet("QPushButton {"
+                               "padding: 5px;"
+                               "border: 2px solid red;"
+                               "}");
     connect(leaveButton, &QPushButton::clicked, this, &GamePage::leave);
-    layout->addWidget(leaveButton);
+    topLayout->addWidget(leaveButton);
+
+    auto infoLayout = new QHBoxLayout;
+    layout->addLayout(infoLayout);
+
+    infoLayout->setContentsMargins(0, 15, 0, 2);
+
+    QFont infoFont;
+    infoFont.setPointSize(16);
 
     setOpponent(opponentNickname);
-    layout->addWidget(opponentLabel_);
+    opponentLabel_->setFont(infoFont);
+    infoLayout->addWidget(opponentLabel_);
 
     turnLabel_->setText(getTurnText());
-    layout->addWidget(turnLabel_);
+    turnLabel_->setAlignment(Qt::AlignRight);
+    turnLabel_->setFont(infoFont);
+    infoLayout->addWidget(turnLabel_);
 
     auto gridLayout = new QGridLayout;
     gridLayout->setHorizontalSpacing(0);
@@ -65,7 +88,9 @@ void GamePage::receiveMessage(const InMessage& message)
             auto y = messageParts[1].toInt();
             auto symbol = messageParts[2];
 
-            board_[x][y]->setText(messageParts[2]);
+            board_[x][y]->setText(symbol);
+            QString colorStyle = "QWidget { color: %1; }";
+            board_[x][y]->setStyleSheet(colorStyle.arg(symbol == "X" ? "blue" : "red"));
             changeTurn();
 
             break;

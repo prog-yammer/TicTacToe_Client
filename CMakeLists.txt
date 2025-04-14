@@ -17,12 +17,7 @@ find_package(Qt6 REQUIRED COMPONENTS
         LinguistTools)
 include_directories(${Qt6_INCLUDE_DIRS})
 
-set(TS_FILES translations/ru.ts)
-
-qt_add_translation(QM_FILES ${TS_FILES})
-qt_add_resources(GENERATED_RESOURCE_FILES resource.qrc)
-
-#qt6_create_translation(TS_FILES ${CMAKE_CURRENT_SOURCE_DIR} ru.ts)
+qt6_add_translations(Client TS_FILES translations/ru.ts)
 
 add_executable(Client main.cpp
         ui/main_window.cpp ui/main_window.h
@@ -36,7 +31,7 @@ add_executable(Client main.cpp
         common/message/tools.h
         common/message/message.h
         model/player.h
-        ${QM_FILES}
+        resource.qrc
 )
 
 target_link_libraries(Client
@@ -46,5 +41,3 @@ target_link_libraries(Client
         Qt6::Network
         Qt6::WebSockets
 )
-
-target_sources(Client PRIVATE ${GENERATED_RESOURCE_FILES})

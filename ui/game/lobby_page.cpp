@@ -17,17 +17,43 @@ LobbyPage::LobbyPage(Player&& player, QWidget *parent)
     this->setLayout(layout);
 
     auto nicknameLabel = new QLabel(this);
-    nicknameLabel->setText(QLabel::tr("Your nickname: ") + player_.nickname);
+    nicknameLabel->setText(QLabel::tr("Your nickname: %1").arg(player_.nickname));
+    nicknameLabel->setStyleSheet("QLabel {"
+                              "font-size: 20px;"
+                              "font-weight: bold;"
+                              "}");
+
     layout->addWidget(nicknameLabel);
 
+    auto buttonsLayout = new QHBoxLayout;
+    layout->addLayout(buttonsLayout);
+
     createGameButton_->setText(QLabel::tr("Create game"));
+    createGameButton_->setStyleSheet("QPushButton {"
+                                     "font-size: 16px;"
+                                     "padding: 10px;"
+                                     "}");
     connect(createGameButton_, &QPushButton::clicked, this, &LobbyPage::createGame);
-    layout->addWidget(createGameButton_);
+    buttonsLayout->addWidget(createGameButton_, 1);
 
     updateGameListButton_->setText(QLabel::tr("Update"));
+    updateGameListButton_->setStyleSheet("QPushButton {"
+                                     "font-size: 16px;"
+                                     "padding: 10px;"
+                                     "}");
     connect(updateGameListButton_, &QPushButton::clicked, this, &LobbyPage::updateGameList);
-    layout->addWidget(updateGameListButton_);
+    buttonsLayout->addWidget(updateGameListButton_, 1);
 
+    gameListWidget_->setStyleSheet(
+            "QListWidget::item {"
+            "   border: 1px solid #999;"
+            "   border-radius: 3px;"
+            "   padding: 2px;"
+            "   margin: 2px;"
+            "}"
+            "QListWidget::item::hover {"
+            "   border: 3px solid #999;"
+            "}");
     connect(gameListWidget_, &QListWidget::itemClicked, this, &LobbyPage::joinGame);
     layout->addWidget(gameListWidget_);
 }
@@ -55,17 +81,19 @@ void LobbyPage::receiveMessage(const InMessage& message)
         case GAME_LIST: {
             gameListWidget_->clear();
 
-            for (auto& gameInfo : message.message.split(' ')) {
-                auto gameInfoParts = gameInfo.split('|');
-                auto item = new QListWidgetItem(gameListWidget_);
+            if (!message.message.isEmpty()) {
+                for (auto& gameInfo : message.message.split(' ')) {
+                    auto item = new QListWidgetItem(gameListWidget_);
 
-                QVariant gameId = gameInfo.split('|')[0];
-                item->setData(Qt::UserRole, gameId);
+                    QVariant gameId = gameInfo.split('|')[0];
+                    item->setData(Qt::UserRole, gameId);
 
-                auto GamePage = new GameItemWidget(std::move(gameInfo));
-                item->setSizeHint(GamePage->sizeHint());
-                gameListWidget_->setItemWidget(item, GamePage);
+                    auto gameItemWidget = new GameItemWidget(std::move(gameInfo));
+                    item->setSizeHint(gameItemWidget->sizeHint());
+                    gameListWidget_->setItemWidget(item, gameItemWidget);
+                }
             }
+
 
             updateGameListButton_->setEnabled(true);
             gameListWidget_->setEnabled(true);
