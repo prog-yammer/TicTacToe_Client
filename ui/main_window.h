@@ -7,6 +7,7 @@
 #include <QStackedWidget>
 #include <QList>
 #include <QThread>
+#include <QResizeEvent>
 #include <QWebSocket>
 
 class MainWindow : public QWidget
@@ -33,9 +34,21 @@ private:
     void connectBasePage(BasePage* widget);
     void disconnectBasePage(BasePage* widget);
 
+    void resizeEvent(QResizeEvent *event) override
+    {
+        auto newSize = event->size();
+        int horizontalMargins = (newSize.width() - minSize_.width()) / 2;
+        int verticalMargins = (newSize.height() - minSize_.height()) / 2;
+
+        setContentsMargins(horizontalMargins, verticalMargins, horizontalMargins, verticalMargins);
+        QWidget::resizeEvent(event);
+    }
+
     QStackedWidget* container_;
     QList<BasePage*> stack_;
 
     QThread* netThread_;
     WebSocketWorker* webSocket_;
+
+    QSize minSize_;
 };

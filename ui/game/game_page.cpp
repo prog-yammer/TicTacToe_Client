@@ -40,6 +40,7 @@ GamePage::GamePage(QString&& gameId, std::optional<QString>&& opponentNickname, 
 
     setOpponent(opponentNickname);
     opponentLabel_->setFont(infoFont);
+    opponentLabel_->setAlignment(Qt::AlignLeft);
     infoLayout->addWidget(opponentLabel_);
 
     turnLabel_->setText(getTurnText());
@@ -47,17 +48,39 @@ GamePage::GamePage(QString&& gameId, std::optional<QString>&& opponentNickname, 
     turnLabel_->setFont(infoFont);
     infoLayout->addWidget(turnLabel_);
 
-    auto gridLayout = new QGridLayout;
-    gridLayout->setHorizontalSpacing(0);
-    gridLayout->setVerticalSpacing(0);
-    gridLayout->setContentsMargins(0, 0, 0, 0);
+    auto boardLayout = new QHBoxLayout;
+    layout->addLayout(boardLayout);
+    boardLayout->addStretch();
+
+    auto boardWidget = new QWidget(this);
+    boardLayout->addWidget(boardWidget);
+
+    boardWidget->setStyleSheet("QPushButton, QPushButton:pressed { "
+                               "margin: 0;"
+                               "padding: 0;"
+                               "border: 1px solid black;"
+                               "background: gray;"
+                               "}");
+
+    auto gridLayout = new QGridLayout(boardWidget);
     gridLayout->setSpacing(0);
+    gridLayout->setContentsMargins(0, 0, 0, 0);
+
+    int buttonSize = 150;
 
     for (int row = 0; row < 3; ++row) {
         for (int col = 0; col < 3; ++col) {
             auto button = new QPushButton(this);
+            button->setFixedSize(buttonSize, buttonSize);
             button->setFont(QFont("Arial", 64));
             button->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+//            button->setStyleSheet(
+//                    "QPushButton, QPushButton:pressed { "
+//                      "margin: 0;"
+//                      "padding: 0;"
+//                      "border: 1px solid black;"
+//                      "background: gray;"
+//                      "}");
 
             connect(button, &QPushButton::clicked, this, [=]() {
                 handleMove(row, col);
@@ -65,10 +88,13 @@ GamePage::GamePage(QString&& gameId, std::optional<QString>&& opponentNickname, 
 
             gridLayout->addWidget(button, row, col);
             board_[row][col] = button;
+            gridLayout->setColumnMinimumWidth(col, buttonSize);
         }
+        gridLayout->setRowMinimumHeight(row, buttonSize);
     }
 
-    layout->addLayout(gridLayout);
+    boardWidget->setFixedSize(buttonSize * 3, buttonSize * 3);
+    boardLayout->addStretch();
 }
 
 void GamePage::receiveMessage(const InMessage& message)

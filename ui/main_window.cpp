@@ -12,8 +12,9 @@ MainWindow::MainWindow(QWidget* parent)
     , container_(new QStackedWidget)
     , netThread_(new QThread(this))
     , webSocket_(new WebSocketWorker(QUrl("ws://localhost:8080")))
+    , minSize_(800, 600)
 {
-    setFixedSize(800, 600);
+    setMinimumSize(minSize_);
 
     auto* layout = new QVBoxLayout;
     this->setLayout(layout);
