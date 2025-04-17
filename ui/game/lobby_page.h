@@ -4,9 +4,9 @@
 #include "../../model/player.h"
 
 #include <QPushButton>
-#include <QListView>
 #include <QVBoxLayout>
 #include <QListWidget>
+#include <QLabel>
 
 class LobbyPage : public BasePage {
     Q_OBJECT
@@ -31,4 +31,6 @@ private:
 
     QPushButton* updateGameListButton_;
     QListWidget* gameListWidget_;
+
+    QLabel* infoLabel;
 };

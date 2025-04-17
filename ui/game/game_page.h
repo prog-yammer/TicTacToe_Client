@@ -29,6 +29,7 @@ private:
     void changeTurn();
 
     bool playerTurn_;
+    bool gameEnded_;
     bool hasOpponent_;
     QPushButton* board_[3][3];
 

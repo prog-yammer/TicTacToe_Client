@@ -12,6 +12,7 @@ LobbyPage::LobbyPage(Player&& player, QWidget *parent)
     , createGameButton_(new QPushButton(this))
     , updateGameListButton_(new QPushButton(this))
     , gameListWidget_(new QListWidget(this))
+    , infoLabel(new QLabel(this))
 {
     auto* layout = new QVBoxLayout;
     this->setLayout(layout);
@@ -44,6 +45,8 @@ LobbyPage::LobbyPage(Player&& player, QWidget *parent)
     connect(updateGameListButton_, &QPushButton::clicked, this, &LobbyPage::updateGameList);
     buttonsLayout->addWidget(updateGameListButton_, 1);
 
+    layout->addWidget(infoLabel);
+
     gameListWidget_->setStyleSheet(
             "QListWidget::item {"
             "   border: 1px solid #999;"
@@ -67,11 +70,8 @@ void LobbyPage::receiveMessage(const InMessage& message)
 {
     if (message.errorCode) {
         if (message.errorCode == ErrorCode::ERROR_JOIN) {
-            QMessageBox::information(
-                    this,
-                    QMessageBox::tr("Notification"),
-                    tr("This game is not available!"));
             updateGameList();
+            infoLabel->setText(tr("This game is not available!"));
         }
         setEnabled(true);
         return;
@@ -93,7 +93,6 @@ void LobbyPage::receiveMessage(const InMessage& message)
                     gameListWidget_->setItemWidget(item, gameItemWidget);
                 }
             }
-
 
             updateGameListButton_->setEnabled(true);
             gameListWidget_->setEnabled(true);
@@ -127,6 +126,7 @@ void LobbyPage::updateGameList()
 {
     updateGameListButton_->setEnabled(false);
     gameListWidget_->setEnabled(false);
+    infoLabel->setText("");
 
     emit sendMessage({.code = GET_GAMES});
 }

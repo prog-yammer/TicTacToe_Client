@@ -74,13 +74,6 @@ GamePage::GamePage(QString&& gameId, std::optional<QString>&& opponentNickname, 
             button->setFixedSize(buttonSize, buttonSize);
             button->setFont(QFont("Arial", 64));
             button->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
-//            button->setStyleSheet(
-//                    "QPushButton, QPushButton:pressed { "
-//                      "margin: 0;"
-//                      "padding: 0;"
-//                      "border: 1px solid black;"
-//                      "background: gray;"
-//                      "}");
 
             connect(button, &QPushButton::clicked, this, [=]() {
                 handleMove(row, col);
@@ -139,18 +132,22 @@ void GamePage::receiveMessage(const InMessage& message)
                     break;
             }
 
-            QMessageBox::information(this, tr("Game ended"), text);
-            emit back();
+            turnLabel_->setText(text);
+            gameEnded_ = true;
 
             break;
         }
     }
-};
+}
 
 void GamePage::leave()
 {
+    if (gameEnded_) {
+        emit back();
+        return;
+    }
     emit sendMessage({ .code = LEAVE_GAME });
-};
+}
 
 void GamePage::handleMove(int row, int col) {
     if (!playerTurn_ || !hasOpponent_)
