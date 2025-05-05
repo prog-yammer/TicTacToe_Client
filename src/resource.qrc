@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/translations">
+        <file alias="ru.qm">../cmake-build-debug/ru.qm</file>
+    </qresource>
+</RCC>

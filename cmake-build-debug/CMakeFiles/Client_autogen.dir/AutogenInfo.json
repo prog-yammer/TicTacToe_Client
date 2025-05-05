@@ -467,6 +467,24 @@
 		"/opt/homebrew/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsVersionlessTargets.cmake",
 		"/opt/homebrew/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake",
 		"/Users/prog-yammer/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeParseArguments.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Test/Qt6TestConfigVersion.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Test/Qt6TestConfigVersionImpl.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Test/Qt6TestConfig.cmake",
+		"/Users/prog-yammer/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Test/Qt6TestDependencies.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Test/Qt6TestTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Test/Qt6TestTargets-release.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Test/Qt6TestAdditionalTargetInfo.cmake",
+		"/opt/homebrew/lib/cmake/Qt6TestPrivate/Qt6TestPrivateConfigVersion.cmake",
+		"/opt/homebrew/lib/cmake/Qt6TestPrivate/Qt6TestPrivateConfigVersionImpl.cmake",
+		"/opt/homebrew/lib/cmake/Qt6TestPrivate/Qt6TestPrivateConfig.cmake",
+		"/Users/prog-yammer/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/lib/cmake/Qt6TestPrivate/Qt6TestPrivateDependencies.cmake",
+		"/opt/homebrew/lib/cmake/Qt6TestPrivate/Qt6TestPrivateTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6TestPrivate/Qt6TestPrivateAdditionalTargetInfo.cmake",
+		"/opt/homebrew/lib/cmake/Qt6TestPrivate/Qt6TestPrivateVersionlessAliasTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Test/QtTestProperties.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Test/Qt6TestVersionlessAliasTargets.cmake",
 		"/opt/homebrew/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"/opt/homebrew/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"/opt/homebrew/lib/cmake/Qt6/Qt6Config.cmake",
@@ -510,7 +528,10 @@
 		"/Users/prog-yammer/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
 		"/opt/homebrew/lib/cmake/Qt6/Qt6Dependencies.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
-		"/Users/prog-yammer/ITMO/thread/Client/resource.qrc"
+		"/Users/prog-yammer/ITMO/thread/Client/src/resource.qrc",
+		"/Users/prog-yammer/ITMO/thread/Client/src/resource.qrc",
+		"/Users/prog-yammer/ITMO/thread/Client/src/resource.qrc",
+		"/Users/prog-yammer/ITMO/thread/Client/src/resource.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "/Users/prog-yammer/ITMO/thread/Client",
 	"CROSS_CONFIG" : false,
@@ -519,69 +540,69 @@
 	"HEADERS" : 
 	[
 		[
-			"/Users/prog-yammer/ITMO/thread/Client/common/base_page.h",
+			"/Users/prog-yammer/ITMO/thread/Client/src/common/base_page.h",
 			"MU",
-			"P66WHCG54J/moc_base_page.cpp",
+			"2PZEZPHIBF/moc_base_page.cpp",
 			null
 		],
 		[
-			"/Users/prog-yammer/ITMO/thread/Client/common/message/command_code.h",
+			"/Users/prog-yammer/ITMO/thread/Client/src/common/message/command_code.h",
 			"MU",
-			"MJ7YPYH7UL/moc_command_code.cpp",
+			"G4SAZD4F3C/moc_command_code.cpp",
 			null
 		],
 		[
-			"/Users/prog-yammer/ITMO/thread/Client/common/message/message.h",
+			"/Users/prog-yammer/ITMO/thread/Client/src/common/message/message.h",
 			"MU",
-			"MJ7YPYH7UL/moc_message.cpp",
+			"G4SAZD4F3C/moc_message.cpp",
 			null
 		],
 		[
-			"/Users/prog-yammer/ITMO/thread/Client/common/message/tools.h",
+			"/Users/prog-yammer/ITMO/thread/Client/src/common/message/tools.h",
 			"MU",
-			"MJ7YPYH7UL/moc_tools.cpp",
+			"G4SAZD4F3C/moc_tools.cpp",
 			null
 		],
 		[
-			"/Users/prog-yammer/ITMO/thread/Client/common/websocket_worker.h",
+			"/Users/prog-yammer/ITMO/thread/Client/src/common/websocket_worker.h",
 			"MU",
-			"P66WHCG54J/moc_websocket_worker.cpp",
+			"2PZEZPHIBF/moc_websocket_worker.cpp",
 			null
 		],
 		[
-			"/Users/prog-yammer/ITMO/thread/Client/model/player.h",
+			"/Users/prog-yammer/ITMO/thread/Client/src/model/player.h",
 			"MU",
-			"NLOY5YBGEN/moc_player.cpp",
+			"VNQA4LF4BW/moc_player.cpp",
 			null
 		],
 		[
-			"/Users/prog-yammer/ITMO/thread/Client/ui/auth/login_page.h",
+			"/Users/prog-yammer/ITMO/thread/Client/src/ui/auth/login_page.h",
 			"MU",
-			"4TS36GQFWS/moc_login_page.cpp",
+			"SUTNPL2SKA/moc_login_page.cpp",
 			null
 		],
 		[
-			"/Users/prog-yammer/ITMO/thread/Client/ui/game/game_item_widget.h",
+			"/Users/prog-yammer/ITMO/thread/Client/src/ui/game/game_item_widget.h",
 			"MU",
-			"5RLGPQ77ID/moc_game_item_widget.cpp",
+			"HHI64DQWZE/moc_game_item_widget.cpp",
 			null
 		],
 		[
-			"/Users/prog-yammer/ITMO/thread/Client/ui/game/game_page.h",
+			"/Users/prog-yammer/ITMO/thread/Client/src/ui/game/game_page.h",
 			"MU",
-			"5RLGPQ77ID/moc_game_page.cpp",
+			"HHI64DQWZE/moc_game_page.cpp",
 			null
 		],
 		[
-			"/Users/prog-yammer/ITMO/thread/Client/ui/game/lobby_page.h",
+			"/Users/prog-yammer/ITMO/thread/Client/src/ui/game/lobby_page.h",
 			"MU",
-			"5RLGPQ77ID/moc_lobby_page.cpp",
+			"HHI64DQWZE/moc_lobby_page.cpp",
 			null
 		],
 		[
-			"/Users/prog-yammer/ITMO/thread/Client/ui/main_window.h",
+			"/Users/prog-yammer/ITMO/thread/Client/src/ui/main_window.h",
 			"MU",
-			"UYX5XTB5RZ/moc_main_window.cpp",
+			"YPKJ5OE7LN/moc_main_window.cpp",
 			null
 		]
 	],
@@ -658,24 +679,24 @@
 	"SETTINGS_FILE" : "/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/Client_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/Users/prog-yammer/ITMO/thread/Client/main.cpp", "MU", null ],
+		[ "/Users/prog-yammer/ITMO/thread/Client/src/main.cpp", "MU", null ],
 		[
-			"/Users/prog-yammer/ITMO/thread/Client/ui/auth/login_page.cpp",
+			"/Users/prog-yammer/ITMO/thread/Client/src/ui/auth/login_page.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/prog-yammer/ITMO/thread/Client/ui/game/game_page.cpp",
+			"/Users/prog-yammer/ITMO/thread/Client/src/ui/game/game_page.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/prog-yammer/ITMO/thread/Client/ui/game/lobby_page.cpp",
+			"/Users/prog-yammer/ITMO/thread/Client/src/ui/game/lobby_page.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/prog-yammer/ITMO/thread/Client/ui/main_window.cpp",
+			"/Users/prog-yammer/ITMO/thread/Client/src/ui/main_window.cpp",
 			"MU",
 			null
 		]

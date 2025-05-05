@@ -1,2 +1,8 @@
 set(__QT_DEPLOY_TARGET_Client_FILE /Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/Client)
 set(__QT_DEPLOY_TARGET_Client_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_test_auth_FILE /Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/test_auth)
+set(__QT_DEPLOY_TARGET_test_auth_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_test_lobby_FILE /Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/test_lobby)
+set(__QT_DEPLOY_TARGET_test_lobby_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_test_game_FILE /Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/test_game)
+set(__QT_DEPLOY_TARGET_test_game_TYPE EXECUTABLE)

@@ -1,4 +1,7 @@
 /Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/Client.dir
+/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/test_auth.dir
+/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/test_lobby.dir
+/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/test_game.dir
 /Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/Client_lupdate.dir
 /Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/update_translations.dir
 /Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/Client_lrelease.dir
@@ -8,3 +11,9 @@
 /Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/Client_autogen_timestamp_deps.dir
 /Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/Client_autogen.dir
+/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/test_auth_autogen_timestamp_deps.dir
+/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/test_auth_autogen.dir
+/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/test_lobby_autogen_timestamp_deps.dir
+/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/test_lobby_autogen.dir
+/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/test_game_autogen_timestamp_deps.dir
+/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/test_game_autogen.dir

@@ -43,23 +43,23 @@ Client_autogen/timestamp: \
 	/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake \
 	/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
 	/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/Client_autogen/moc_predefs.h \
-	/Users/prog-yammer/ITMO/thread/Client/common/base_page.h \
-	/Users/prog-yammer/ITMO/thread/Client/common/message/command_code.h \
-	/Users/prog-yammer/ITMO/thread/Client/common/message/message.h \
-	/Users/prog-yammer/ITMO/thread/Client/common/message/tools.h \
-	/Users/prog-yammer/ITMO/thread/Client/common/websocket_worker.h \
-	/Users/prog-yammer/ITMO/thread/Client/main.cpp \
-	/Users/prog-yammer/ITMO/thread/Client/model/player.h \
-	/Users/prog-yammer/ITMO/thread/Client/resource.qrc \
-	/Users/prog-yammer/ITMO/thread/Client/ui/auth/login_page.cpp \
-	/Users/prog-yammer/ITMO/thread/Client/ui/auth/login_page.h \
-	/Users/prog-yammer/ITMO/thread/Client/ui/game/game_item_widget.h \
-	/Users/prog-yammer/ITMO/thread/Client/ui/game/game_page.cpp \
-	/Users/prog-yammer/ITMO/thread/Client/ui/game/game_page.h \
-	/Users/prog-yammer/ITMO/thread/Client/ui/game/lobby_page.cpp \
-	/Users/prog-yammer/ITMO/thread/Client/ui/game/lobby_page.h \
-	/Users/prog-yammer/ITMO/thread/Client/ui/main_window.cpp \
-	/Users/prog-yammer/ITMO/thread/Client/ui/main_window.h \
+	/Users/prog-yammer/ITMO/thread/Client/src/common/base_page.h \
+	/Users/prog-yammer/ITMO/thread/Client/src/common/message/command_code.h \
+	/Users/prog-yammer/ITMO/thread/Client/src/common/message/message.h \
+	/Users/prog-yammer/ITMO/thread/Client/src/common/message/tools.h \
+	/Users/prog-yammer/ITMO/thread/Client/src/common/websocket_worker.h \
+	/Users/prog-yammer/ITMO/thread/Client/src/main.cpp \
+	/Users/prog-yammer/ITMO/thread/Client/src/model/player.h \
+	/Users/prog-yammer/ITMO/thread/Client/src/resource.qrc \
+	/Users/prog-yammer/ITMO/thread/Client/src/ui/auth/login_page.cpp \
+	/Users/prog-yammer/ITMO/thread/Client/src/ui/auth/login_page.h \
+	/Users/prog-yammer/ITMO/thread/Client/src/ui/game/game_item_widget.h \
+	/Users/prog-yammer/ITMO/thread/Client/src/ui/game/game_page.cpp \
+	/Users/prog-yammer/ITMO/thread/Client/src/ui/game/game_page.h \
+	/Users/prog-yammer/ITMO/thread/Client/src/ui/game/lobby_page.cpp \
+	/Users/prog-yammer/ITMO/thread/Client/src/ui/game/lobby_page.h \
+	/Users/prog-yammer/ITMO/thread/Client/src/ui/main_window.cpp \
+	/Users/prog-yammer/ITMO/thread/Client/src/ui/main_window.h \
 	/opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/QFlags \
 	/opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/QList \
 	/opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/QObject \
@@ -599,6 +599,22 @@ Client_autogen/timestamp: \
 	/opt/homebrew/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateDependencies.cmake \
 	/opt/homebrew/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateTargets.cmake \
 	/opt/homebrew/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateVersionlessAliasTargets.cmake \
+	/opt/homebrew/lib/cmake/Qt6Test/Qt6TestAdditionalTargetInfo.cmake \
+	/opt/homebrew/lib/cmake/Qt6Test/Qt6TestConfig.cmake \
+	/opt/homebrew/lib/cmake/Qt6Test/Qt6TestConfigVersion.cmake \
+	/opt/homebrew/lib/cmake/Qt6Test/Qt6TestConfigVersionImpl.cmake \
+	/opt/homebrew/lib/cmake/Qt6Test/Qt6TestDependencies.cmake \
+	/opt/homebrew/lib/cmake/Qt6Test/Qt6TestTargets-release.cmake \
+	/opt/homebrew/lib/cmake/Qt6Test/Qt6TestTargets.cmake \
+	/opt/homebrew/lib/cmake/Qt6Test/Qt6TestVersionlessAliasTargets.cmake \
+	/opt/homebrew/lib/cmake/Qt6Test/QtTestProperties.cmake \
+	/opt/homebrew/lib/cmake/Qt6TestPrivate/Qt6TestPrivateAdditionalTargetInfo.cmake \
+	/opt/homebrew/lib/cmake/Qt6TestPrivate/Qt6TestPrivateConfig.cmake \
+	/opt/homebrew/lib/cmake/Qt6TestPrivate/Qt6TestPrivateConfigVersion.cmake \
+	/opt/homebrew/lib/cmake/Qt6TestPrivate/Qt6TestPrivateConfigVersionImpl.cmake \
+	/opt/homebrew/lib/cmake/Qt6TestPrivate/Qt6TestPrivateDependencies.cmake \
+	/opt/homebrew/lib/cmake/Qt6TestPrivate/Qt6TestPrivateTargets.cmake \
+	/opt/homebrew/lib/cmake/Qt6TestPrivate/Qt6TestPrivateVersionlessAliasTargets.cmake \
 	/opt/homebrew/lib/cmake/Qt6WebSockets/Qt6WebSocketsAdditionalTargetInfo.cmake \
 	/opt/homebrew/lib/cmake/Qt6WebSockets/Qt6WebSocketsConfig.cmake \
 	/opt/homebrew/lib/cmake/Qt6WebSockets/Qt6WebSocketsConfigVersion.cmake \

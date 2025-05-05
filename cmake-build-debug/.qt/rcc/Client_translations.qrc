@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/i18n">
+    <file alias="ru.qm">/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug/ru.qm</file>
+  </qresource>
+</RCC>
+

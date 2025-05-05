@@ -1,0 +1,204 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Client",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Client-Debug-00b033e9fd961e6f2165.json",
+					"name" : "Client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Client_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Client_autogen-Debug-3a9267b8a91dc306ba50.json",
+					"name" : "Client_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Client_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Client_autogen_timestamp_deps-Debug-c77db5f538c8ad5ffe96.json",
+					"name" : "Client_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Client_lrelease::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Client_lrelease-Debug-73b6f9bdc93db5aa1751.json",
+					"name" : "Client_lrelease",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Client_lupdate::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Client_lupdate-Debug-773beaf6421fcef9ef45.json",
+					"name" : "Client_lupdate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Client_other_files::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Client_other_files-Debug-f9e2638aa657096fb7be.json",
+					"name" : "Client_other_files",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "release_translations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-release_translations-Debug-e3f0ee6797090a22a450.json",
+					"name" : "release_translations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_auth::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_auth-Debug-9326dc92cf86c4c1b4ee.json",
+					"name" : "test_auth",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_auth_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_auth_autogen-Debug-4c85666779530f536c4b.json",
+					"name" : "test_auth_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_auth_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_auth_autogen_timestamp_deps-Debug-d99eb54427ed303a0678.json",
+					"name" : "test_auth_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_game::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_game-Debug-581b3f50991c70194c9b.json",
+					"name" : "test_game",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_game_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_game_autogen-Debug-6e013b3e3ee5e16fe26c.json",
+					"name" : "test_game_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_game_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_game_autogen_timestamp_deps-Debug-140d92b1b48ad45b80b5.json",
+					"name" : "test_game_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_lobby::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_lobby-Debug-e6210d5e38539fcd0888.json",
+					"name" : "test_lobby",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_lobby_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_lobby_autogen-Debug-4e4bdcccdc900d00e288.json",
+					"name" : "test_lobby_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_lobby_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_lobby_autogen_timestamp_deps-Debug-3c2b1f8ddb64fd81d19e.json",
+					"name" : "test_lobby_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "update_translations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-update_translations-Debug-57558e53249f180b97db.json",
+					"name" : "update_translations",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/prog-yammer/ITMO/thread/Client/cmake-build-debug",
+		"source" : "/Users/prog-yammer/ITMO/thread/Client"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
